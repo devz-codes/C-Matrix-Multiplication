@@ -30,3 +30,17 @@ vector<vector<double>> product(vector<vector<double>> mt1, vector<vector<double>
         return result;
     }
 }
+
+int main(){
+    vector<vector<double>> mt1={{1,2,3},{4,5,6},{7,8,9}};
+    vector<vector<double>> mt2={{1,2,3},{4,5,6},{7,8,9}};
+
+    vector<vector<double>> prod=product(mt1,mt2);
+    for(vector<double> v:prod){
+    	for(double i:v){
+    		cout<<i<<"\t";
+		}
+		cout<<endl;
+	}
+    return 0;
+}
